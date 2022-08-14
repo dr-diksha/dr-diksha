@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav {
+    display: flexbox;
+    flex-direction: row;
+}
+
+.brandname {
+    font-size: 5vw;
+    padding: 3vw;
+    margin: 0;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(230, 230, 230);
+    font-family: 'Fuzzy Bubbles', cursive;
+    background: rgb(2,0,36);
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,126,1) 0%, rgba(150,61,153,0.9925012241224614) 30%, rgba(0,212,255,1) 100%);
+}
+
+.banner {
+    height: auto;
+}
+
+.brand{
+    padding: 0;
+    margin: 0;
+}
+
+.banner img {
+    display: block;
+    margin: auto;
+    width: 90vw;
+    height: 89vh;
+}
+
+.nav {
+    position: sticky;
+    z-index: 1;
+    background-color: #e40046;
+    margin: auto;
+}
+
+.nav a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 1rem;
+    margin-right: 10px;
+}
+
+.nav a:hover {
+    background-color: white;
+    font-size: 1.25rem;
+    color: #ff004c;
+    transition: 0.15s;
+}
+
+.container {
+    width: 90vw;
+    height: auto;
+    margin: 3rem auto;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.box p {
+    color: white;
+    background-color: #e40046;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+
+#searchbox {
+    border-radius: 90px;
+    text-align: left;
+}
+
+::placeholder {
+    color: #e40046;
+}
+
+@media only screen and (min-width: 769px) {
+    nav a {
+        display: inline block;
+    }
+
+    #searchbox{
+        display: inline-block;
+        justify-self: center;
+        width: 10%;
+        padding: 1rem;
+        margin: 1%;
+    }
+
+    #searchbox {
+        display: inline block;
+        width: 20vw;
+        height: 15px;
+        padding: 1.5rem;
+        margin: 1%;
+    }
+
+    .box {
+        display: inline-block;
+        width: 50%;
+        height: 500px;
+    }
+
+
+    .box img {
+        display: inline block;
+        padding: 1%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box img:hover {
+        opacity: 0.7;
+        transition: 0.40s;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav a {
+        font-size: 2.5vw;
+    }
+
+    .box {
+        display: inline-block;
+        width: 90%;
+        margin-left: 10rem;
+    }
+
+
+}
